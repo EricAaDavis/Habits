@@ -62,7 +62,7 @@ extension APIRequest where Response: Decodable {
     func send(completion: @escaping (Result<Response, Error>) -> Void) {
         
 
-        let requestDelay: Double = 4
+        let requestDelay: Double = 1
         DispatchQueue.main.asyncAfter(deadline: .now() + requestDelay) {
             if let bundlePath = Bundle.main.path(forResource: filename, ofType: "json") {
                 do {

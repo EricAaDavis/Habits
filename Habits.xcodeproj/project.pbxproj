@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		200A4C0F275F77EB00E73330 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A4C0E275F77EB00E73330 /* User.swift */; };
 		200A4C13275F813100E73330 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 200A4C12275F813100E73330 /* users.json */; };
+		200A4C17275FA4CA00E73330 /* HabitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A4C16275FA4CA00E73330 /* HabitStatistics.swift */; };
+		200A4C19275FA52B00E73330 /* UserCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A4C18275FA52B00E73330 /* UserCount.swift */; };
 		2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087426C2754F47100DF3614 /* AppDelegate.swift */; };
 		2087426F2754F47100DF3614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087426E2754F47100DF3614 /* SceneDelegate.swift */; };
 		208742742754F47100DF3614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208742722754F47100DF3614 /* Main.storyboard */; };
 		208742762754F47500DF3614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208742752754F47500DF3614 /* Assets.xcassets */; };
 		208742792754F47500DF3614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208742772754F47500DF3614 /* LaunchScreen.storyboard */; };
-		208742842754F47600DF3614 /* HabitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208742832754F47600DF3614 /* HabitsTests.swift */; };
-		2087428E2754F47600DF3614 /* HabitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087428D2754F47600DF3614 /* HabitsUITests.swift */; };
-		208742902754F47600DF3614 /* HabitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087428F2754F47600DF3614 /* HabitsUITestsLaunchTests.swift */; };
 		2087429D2754FD6A00DF3614 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087429C2754FD6A00DF3614 /* HomeCollectionViewController.swift */; };
 		208742A02754FD8200DF3614 /* HabitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087429F2754FD8200DF3614 /* HabitCollectionViewController.swift */; };
 		208742A22754FD8D00DF3614 /* UserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208742A12754FD8D00DF3614 /* UserCollectionViewController.swift */; };
@@ -55,6 +54,8 @@
 /* Begin PBXFileReference section */
 		200A4C0E275F77EB00E73330 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		200A4C12275F813100E73330 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		200A4C16275FA4CA00E73330 /* HabitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatistics.swift; sourceTree = "<group>"; };
+		200A4C18275FA52B00E73330 /* UserCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCount.swift; sourceTree = "<group>"; };
 		208742692754F47100DF3614 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2087426C2754F47100DF3614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2087426E2754F47100DF3614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,10 +64,7 @@
 		208742782754F47500DF3614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2087427A2754F47500DF3614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2087427F2754F47600DF3614 /* HabitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		208742832754F47600DF3614 /* HabitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTests.swift; sourceTree = "<group>"; };
 		208742892754F47600DF3614 /* HabitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2087428D2754F47600DF3614 /* HabitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsUITests.swift; sourceTree = "<group>"; };
-		2087428F2754F47600DF3614 /* HabitsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2087429C2754FD6A00DF3614 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		2087429F2754FD8200DF3614 /* HabitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewController.swift; sourceTree = "<group>"; };
 		208742A12754FD8D00DF3614 /* UserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewController.swift; sourceTree = "<group>"; };
@@ -114,8 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				2087426B2754F47100DF3614 /* Habits */,
-				208742822754F47600DF3614 /* HabitsTests */,
-				2087428C2754F47600DF3614 /* HabitsUITests */,
 				2087426A2754F47100DF3614 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,23 +141,6 @@
 				20D20493275E293400AA2226 /* Settings.swift */,
 			);
 			path = Habits;
-			sourceTree = "<group>";
-		};
-		208742822754F47600DF3614 /* HabitsTests */ = {
-			isa = PBXGroup;
-			children = (
-				208742832754F47600DF3614 /* HabitsTests.swift */,
-			);
-			path = HabitsTests;
-			sourceTree = "<group>";
-		};
-		2087428C2754F47600DF3614 /* HabitsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2087428D2754F47600DF3614 /* HabitsUITests.swift */,
-				2087428F2754F47600DF3614 /* HabitsUITestsLaunchTests.swift */,
-			);
-			path = HabitsUITests;
 			sourceTree = "<group>";
 		};
 		2087429E2754FD7000DF3614 /* Controller */ = {
@@ -203,6 +182,8 @@
 				208742B927552C7800DF3614 /* Category.swift */,
 				208742BB2756391100DF3614 /* Color.swift */,
 				200A4C0E275F77EB00E73330 /* User.swift */,
+				200A4C16275FA4CA00E73330 /* HabitStatistics.swift */,
+				200A4C18275FA52B00E73330 /* UserCount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,12 +366,14 @@
 				208742B427551D8F00DF3614 /* APIService.swift in Sources */,
 				208742A02754FD8200DF3614 /* HabitCollectionViewController.swift in Sources */,
 				2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */,
+				200A4C19275FA52B00E73330 /* UserCount.swift in Sources */,
 				208742AF27550FE700DF3614 /* Habit.swift in Sources */,
 				20D20494275E293400AA2226 /* Settings.swift in Sources */,
 				208742BC2756391100DF3614 /* Color.swift in Sources */,
 				208742BA27552C7800DF3614 /* Category.swift in Sources */,
 				200A4C0F275F77EB00E73330 /* User.swift in Sources */,
 				208742A42754FDA000DF3614 /* LogHabitCollectionViewController.swift in Sources */,
+				200A4C17275FA4CA00E73330 /* HabitStatistics.swift in Sources */,
 				208742B22755121800DF3614 /* APIRequest.swift in Sources */,
 				2087426F2754F47100DF3614 /* SceneDelegate.swift in Sources */,
 			);
@@ -400,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				208742842754F47600DF3614 /* HabitsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +390,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2087428E2754F47600DF3614 /* HabitsUITests.swift in Sources */,
-				208742902754F47600DF3614 /* HabitsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
