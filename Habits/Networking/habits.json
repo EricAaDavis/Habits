@@ -1,0 +1,230 @@
+{
+  "Stretching": {
+    "name": "Stretching",
+    "category": {
+      "name": "Exercise",
+      "color": {
+        "h": 0.25,
+        "s": 1,
+        "b": 0.9
+      }
+    },
+    "info": "Get a bit of extra oxygen into your muscles and keep your tendons flexible."
+  },
+  "Glass of water": {
+    "name": "Glass of water",
+    "category": {
+      "name": "Eating",
+      "color": {
+        "h": 0.5,
+        "s": 0.5,
+        "b": 0.8
+      }
+    },
+    "info": "Drinking enough water is one of the easiest ways to maintain daily health and wellbeing."
+  },
+  "Writing": {
+    "name": "Writing",
+    "category": {
+      "name": "Creativity",
+      "color": {
+        "h": 0.6,
+        "s": 0.3,
+        "b": 0.9
+      }
+    },
+    "info": "Limber up your brain by expressing yourself with the written word. Poetry, fiction, essays, correspondence—all are great ways to share your ideas with others."
+  },
+  "Brisk walk": {
+    "name": "Brisk walk",
+    "category": {
+      "name": "Exercise",
+      "color": {
+        "h": 0.25,
+        "s": 1,
+        "b": 0.9
+      }
+    },
+    "info": "Get your heart rate up with this simple aerobic exercise."
+  },
+  "Portion of fruit": {
+    "name": "Portion of fruit",
+    "category": {
+      "name": "Eating",
+      "color": {
+        "h": 0.5,
+        "s": 0.5,
+        "b": 0.8
+      }
+    },
+    "info": "A healthy treat. Recommended for daily consumption."
+  },
+  "Drawing": {
+    "name": "Drawing",
+    "category": {
+      "name": "Creativity",
+      "color": {
+        "h": 0.6,
+        "s": 0.3,
+        "b": 0.9
+      }
+    },
+    "info": "Sketch, scribble, design, doodle—all great activities to flex your creative muscles and shift mental gears."
+  },
+  "Volunteering": {
+    "name": "Volunteering",
+    "category": {
+      "name": "Civic Participation",
+      "color": {
+        "h": 0.55,
+        "s": 0.4,
+        "b": 0.75
+      }
+    },
+    "info": "Take some time to help out in your community. Giving back is one of the best ways to feel fulfilled."
+  },
+  "Yoga": {
+    "name": "Yoga",
+    "category": {
+      "name": "Exercise",
+      "color": {
+        "h": 0.25,
+        "s": 1,
+        "b": 0.9
+      }
+    },
+    "info": "Center yourself in your body and calm your mind, while also improving your fitness and flexibility."
+  },
+  "Article": {
+    "name": "Article",
+    "category": {
+      "name": "Culture",
+      "color": {
+        "h": 0.2,
+        "s": 0.4,
+        "b": 0.75
+      }
+    },
+    "info": "Get out of your social network and take time to read a long-form piece that helps you focus and keeps you informed."
+  },
+  "Painting": {
+    "name": "Painting",
+    "category": {
+      "name": "Creativity",
+      "color": {
+        "h": 0.6,
+        "s": 0.3,
+        "b": 0.9
+      }
+    },
+    "info": "Learn the theory of color, try out the techniques of the masters, experiment with your own style, or just break out the finger paint."
+  },
+  "Podcast": {
+    "name": "Podcast",
+    "category": {
+      "name": "Culture",
+      "color": {
+        "h": 0.2,
+        "s": 0.4,
+        "b": 0.75
+      }
+    },
+    "info": "Keep up with your favorite topics."
+  },
+  "Live music": {
+    "name": "Live music",
+    "category": {
+      "name": "Culture",
+      "color": {
+        "h": 0.2,
+        "s": 0.4,
+        "b": 0.75
+      }
+    },
+    "info": "Go enjoy your favorite artists, or discover new ones!"
+  },
+  "Book chapter": {
+    "name": "Book chapter",
+    "category": {
+      "name": "Culture",
+      "color": {
+        "h": 0.2,
+        "s": 0.4,
+        "b": 0.75
+      }
+    },
+    "info": "Make some progress in that favorite book—relax and engage your imagination!"
+  },
+  "Music practice": {
+    "name": "Music practice",
+    "category": {
+      "name": "Creativity",
+      "color": {
+        "h": 0.6,
+        "s": 0.3,
+        "b": 0.9
+      }
+    },
+    "info": "Getting good at an instrument is all about practice. Work on perfecting your art so you can share the beauty of music with audiences large or small."
+  },
+  "Demonstration": {
+    "name": "Demonstration",
+    "category": {
+      "name": "Civic Participation",
+      "color": {
+        "h": 0.55,
+        "s": 0.4,
+        "b": 0.75
+      }
+    },
+    "info": "Make your voice heard while attracting attention for your cause."
+  },
+  "Portion of salad": {
+    "name": "Portion of salad",
+    "category": {
+      "name": "Eating",
+      "color": {
+        "h": 0.5,
+        "s": 0.5,
+        "b": 0.8
+      }
+    },
+    "info": "Raw greens and other ingredients promote overall health, while also helping those who're counting calories."
+  },
+  "Phone banking": {
+    "name": "Phone banking",
+    "category": {
+      "name": "Civic Participation",
+      "color": {
+        "h": 0.55,
+        "s": 0.4,
+        "b": 0.75
+      }
+    },
+    "info": "Reach out to advocate for a cause you're passionate about. Work towards a better future one person at a time."
+  },
+  "Meditation": {
+    "name": "Meditation",
+    "category": {
+      "name": "Mindfulness",
+      "color": {
+        "h": 0.85,
+        "s": 0.5,
+        "b": 0.8
+      }
+    },
+    "info": "Focus on quieting your mind. Pay attention to your breath and observe your thoughts."
+  },
+  "Deep breathing": {
+    "name": "Deep breathing",
+    "category": {
+      "name": "Mindfulness",
+      "color": {
+        "h": 0.85,
+        "s": 0.5,
+        "b": 0.8
+      }
+    },
+    "info": "A good way to settle your mind and relax."
+  }
+}

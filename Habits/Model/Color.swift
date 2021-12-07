@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Color {
+struct Color: Equatable {
     let hue: Double
     let saturation: Double
     let brightness: Double

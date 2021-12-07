@@ -145,12 +145,24 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QtB-wE-YPk">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="User" id="QtB-wE-YPk" customClass="PrimarySecondaryTextCollectionViewCell" customModule="Habits" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SuB-qO-D4q">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-4O-Dli">
+                                            <rect key="frame" x="43" y="53.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LEV-4O-Dli" firstAttribute="centerX" secondItem="SuB-qO-D4q" secondAttribute="centerX" id="1xN-Fw-dNX"/>
+                                        <constraint firstItem="LEV-4O-Dli" firstAttribute="centerY" secondItem="SuB-qO-D4q" secondAttribute="centerY" id="jZ2-Sw-SAw"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
                                     <segue destination="T8d-M0-WK3" kind="show" id="TP9-a9-YKC"/>
@@ -259,16 +271,17 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="V86-RW-2s9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jqp-ik-aBP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="standardAppearance"/>
                         <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ecd-JA-Bgn" kind="relationship" relationship="viewControllers" id="pMp-36-eXJ"/>
                         <segue destination="HUc-eO-BLr" kind="relationship" relationship="viewControllers" id="pD0-yP-0Pe"/>
                         <segue destination="aD2-ef-s0m" kind="relationship" relationship="viewControllers" id="pDo-Pj-3p7"/>
                         <segue destination="KeG-6h-f8e" kind="relationship" relationship="viewControllers" id="9L2-ea-jDF"/>
+                        <segue destination="ecd-JA-Bgn" kind="relationship" relationship="viewControllers" id="evj-zV-Kdc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fl-JQ-qZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

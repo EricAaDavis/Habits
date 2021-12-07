@@ -15,6 +15,7 @@ protocol APIRequest {
     var queryItems: [URLQueryItem]? { get }
     var request: URLRequest { get }
     var postData: Data? { get }
+    var filename: String { get }
 }
 
 //These values never change in our case so we set a default value
@@ -60,18 +61,35 @@ extension APIRequest {
 extension APIRequest where Response: Decodable {
     func send(completion: @escaping (Result<Response, Error>) -> Void) {
         
-        URLSession.shared.dataTask(with: request) { (data, _, error) in
-            do {
-                if let data = data {
-                    let decoded = try JSONDecoder().decode(Response.self, from: data)
+
+        let requestDelay: Double = 4
+        DispatchQueue.main.asyncAfter(deadline: .now() + requestDelay) {
+            if let bundlePath = Bundle.main.path(forResource: filename, ofType: "json") {
+                do {
+                    let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8)
+                    let decoded = try JSONDecoder().decode(Response.self, from: jsonData ?? Data())
                     completion(.success(decoded))
-                } else if let error = error {
-                    completion(.failure(error))
+                } catch let error {
+                    print("Local JSON not supported")
+                    print(error.localizedDescription)
                 }
-            } catch {
-                print("request failed")
             }
-        }.resume()
-        
+        }
+//
+//        URLSession.shared.dataTask(with: request) { (data, _, error) in
+//            do {
+//                if let data = data {
+//                    let decoded = try JSONDecoder().decode(Response.self, from: data)
+//                    completion(.success(decoded))
+//                } else if let error = error {
+//                    // check status code
+//                    // show login screen if appropriate
+//                    completion(.failure(error))
+//                }
+//            } catch {
+//                print("request failed")
+//            }
+//        }.resume()
+//
     }
 }

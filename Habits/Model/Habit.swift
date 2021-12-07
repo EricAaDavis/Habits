@@ -15,14 +15,16 @@ struct Habit {
 
 extension Habit: Codable { }
 
+extension Habit: Comparable {
+    static func < (lhs: Habit, rhs: Habit) -> Bool {
+        return lhs.name < rhs.name
+    }
+}
+
+//Meaning that we only use tha name for comparison
 extension Habit: Hashable {
-    //I have no clue what this does
     func hash(into hasher: inout Hasher) {
         hasher.combine(name)
-    }
-    
-    static func == (lhs: Habit, rhs: Habit) -> Bool {
-        return lhs.name == rhs.name
     }
 }
 
