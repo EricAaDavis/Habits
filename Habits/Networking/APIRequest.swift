@@ -50,7 +50,6 @@ extension APIRequest {
         }
         request.httpMethod = "POST"
         
-        print("This is the request URL \(request)")
         return request
         
     }
@@ -59,7 +58,7 @@ extension APIRequest {
 //this Where Response: Decodable i don't quite understand. How does the function know what response is?
 //limiting the the use of the method inside to only those types whose associeted Response typed are Decodable
 extension APIRequest where Response: Decodable {
-    func send(completion: @escaping (Result<Response, Error>) -> Void) {
+    func sendFileRequest(completion: @escaping (Result<Response, Error>) -> Void) {
         
 
         let requestDelay: Double = 1
@@ -74,22 +73,46 @@ extension APIRequest where Response: Decodable {
                     print(error.localizedDescription)
                 }
             }
+            
+            print("File Request - This is the URL: \(request) for \(filename)")
         }
-//
-//        URLSession.shared.dataTask(with: request) { (data, _, error) in
-//            do {
-//                if let data = data {
-//                    let decoded = try JSONDecoder().decode(Response.self, from: data)
-//                    completion(.success(decoded))
-//                } else if let error = error {
-//                    // check status code
-//                    // show login screen if appropriate
-//                    completion(.failure(error))
-//                }
-//            } catch {
-//                print("request failed")
-//            }
-//        }.resume()
-//
     }
+    
+    func sendApiRequest(completion: @escaping (Result<Response, Error>) -> Void) {
+        
+
+//        let requestDelay: Double = 1
+//        DispatchQueue.main.asyncAfter(deadline: .now() + requestDelay) {
+//            if let bundlePath = Bundle.main.path(forResource: filename, ofType: "json") {
+//                do {
+//                    let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8)
+//                    let decoded = try JSONDecoder().decode(Response.self, from: jsonData ?? Data())
+//                    completion(.success(decoded))
+//                } catch let error {
+//                    print("Local JSON not supported")
+//                    print(error.localizedDescription)
+//                }
+//            }
+//        }
+
+        URLSession.shared.dataTask(with: request) { (data, _, error) in
+            do {
+                if let data = data {
+                    let decoded = try JSONDecoder().decode(Response.self, from: data)
+                    completion(.success(decoded))
+                } else if let error = error {
+                    // check status code
+                    // show login screen if appropriate
+                    completion(.failure(error))
+                }
+            } catch {
+                print("request failed")
+            }
+        }.resume()
+        
+        print("API Request - This is the URL: \(request) for \(filename)")
+
+    }
+    
+    
 }

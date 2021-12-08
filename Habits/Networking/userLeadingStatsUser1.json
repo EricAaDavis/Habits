@@ -1,0 +1,29 @@
+{
+  "habitCounts": [
+    {
+      "habit": {
+        "name": "Stretching",
+        "category": {
+          "name": "Exercise",
+          "color": {
+            "h": 0.25,
+            "s": 1,
+            "b": 0.9
+          }
+        },
+        "info": "Get a bit of extra oxygen into your muscles and keep your tendons flexible."
+      },
+      "count": 787
+    }
+  ],
+  "user": {
+    "bio": "Fascinated by soccer since I was in diapers. Self-motivated. My guiding principles: I care and I'm thoughtful.",
+    "id": "user1",
+    "name": "Amber Spiers",
+    "color": {
+      "h": 0.3821495304243457,
+      "s": 0.9848551441827402,
+      "b": 0.9756186459120062
+    }
+  }
+}

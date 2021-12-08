@@ -42,6 +42,39 @@ struct HabitStatisticsRequest: APIRequest {
         }
     }
     
-    var filename: String { "habitStats" }
+    var filename: String { "HabitMusicStats" }
 
 }
+
+struct UserStatisticsRequest: APIRequest {
+    
+    //Why do we typealias this?
+    typealias Response = [UserStatistics]
+    
+    var userIDs: [String]?
+    
+    var path: String { "/userStats" }
+    
+    var queryItems: [URLQueryItem]? {
+        if let userIDs = userIDs {
+            return [URLQueryItem(name: "ids", value: userIDs.joined(separator: ","))]
+        } else {
+            return nil
+        }
+    }
+    
+    var filename: String { "HabitUser2" }
+    
+}
+
+struct HabitLeadStatisticsRequest: APIRequest {
+    typealias Response = UserStatistics
+    
+    var userID: String
+    
+    var path: String { "/userLeadingStats/\(userID)" }
+    
+    var filename: String { "userLeadingStatsUser1" }
+    
+}
+

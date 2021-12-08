@@ -11,6 +11,11 @@
 		200A4C13275F813100E73330 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 200A4C12275F813100E73330 /* users.json */; };
 		200A4C17275FA4CA00E73330 /* HabitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A4C16275FA4CA00E73330 /* HabitStatistics.swift */; };
 		200A4C19275FA52B00E73330 /* UserCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A4C18275FA52B00E73330 /* UserCount.swift */; };
+		206878DF2760D6810081849A /* HabitMusicStats.json in Resources */ = {isa = PBXBuildFile; fileRef = 206878DE2760D6810081849A /* HabitMusicStats.json */; };
+		206878E12760EFC80081849A /* UserStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206878E02760EFC80081849A /* UserStatistics.swift */; };
+		206878E32760EFFD0081849A /* HabitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206878E22760EFFD0081849A /* HabitCount.swift */; };
+		206878E5276115740081849A /* HabitStatUser2.json in Resources */ = {isa = PBXBuildFile; fileRef = 206878E4276115740081849A /* HabitStatUser2.json */; };
+		206878E7276115FC0081849A /* userLeadingStatsUser1.json in Sources */ = {isa = PBXBuildFile; fileRef = 206878E6276115FC0081849A /* userLeadingStatsUser1.json */; };
 		2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087426C2754F47100DF3614 /* AppDelegate.swift */; };
 		2087426F2754F47100DF3614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087426E2754F47100DF3614 /* SceneDelegate.swift */; };
 		208742742754F47100DF3614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208742722754F47100DF3614 /* Main.storyboard */; };
@@ -56,6 +61,11 @@
 		200A4C12275F813100E73330 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		200A4C16275FA4CA00E73330 /* HabitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatistics.swift; sourceTree = "<group>"; };
 		200A4C18275FA52B00E73330 /* UserCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCount.swift; sourceTree = "<group>"; };
+		206878DE2760D6810081849A /* HabitMusicStats.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HabitMusicStats.json; sourceTree = "<group>"; };
+		206878E02760EFC80081849A /* UserStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatistics.swift; sourceTree = "<group>"; };
+		206878E22760EFFD0081849A /* HabitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCount.swift; sourceTree = "<group>"; };
+		206878E4276115740081849A /* HabitStatUser2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HabitStatUser2.json; sourceTree = "<group>"; };
+		206878E6276115FC0081849A /* userLeadingStatsUser1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userLeadingStatsUser1.json; sourceTree = "<group>"; };
 		208742692754F47100DF3614 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2087426C2754F47100DF3614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2087426E2754F47100DF3614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +194,8 @@
 				200A4C0E275F77EB00E73330 /* User.swift */,
 				200A4C16275FA4CA00E73330 /* HabitStatistics.swift */,
 				200A4C18275FA52B00E73330 /* UserCount.swift */,
+				206878E02760EFC80081849A /* UserStatistics.swift */,
+				206878E22760EFFD0081849A /* HabitCount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +214,9 @@
 			children = (
 				20D2048F275A3DD100AA2226 /* habits.json */,
 				200A4C12275F813100E73330 /* users.json */,
+				206878DE2760D6810081849A /* HabitMusicStats.json */,
+				206878E4276115740081849A /* HabitStatUser2.json */,
+				206878E6276115FC0081849A /* userLeadingStatsUser1.json */,
 				208742B12755121800DF3614 /* APIRequest.swift */,
 				208742B327551D8F00DF3614 /* APIService.swift */,
 			);
@@ -331,6 +346,8 @@
 				208742792754F47500DF3614 /* LaunchScreen.storyboard in Resources */,
 				208742762754F47500DF3614 /* Assets.xcassets in Resources */,
 				20D20490275A3DD200AA2226 /* habits.json in Resources */,
+				206878DF2760D6810081849A /* HabitMusicStats.json in Resources */,
+				206878E5276115740081849A /* HabitStatUser2.json in Resources */,
 				208742742754F47100DF3614 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,8 +384,11 @@
 				208742A02754FD8200DF3614 /* HabitCollectionViewController.swift in Sources */,
 				2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */,
 				200A4C19275FA52B00E73330 /* UserCount.swift in Sources */,
+				206878E7276115FC0081849A /* userLeadingStatsUser1.json in Sources */,
 				208742AF27550FE700DF3614 /* Habit.swift in Sources */,
 				20D20494275E293400AA2226 /* Settings.swift in Sources */,
+				206878E12760EFC80081849A /* UserStatistics.swift in Sources */,
+				206878E32760EFFD0081849A /* HabitCount.swift in Sources */,
 				208742BC2756391100DF3614 /* Color.swift in Sources */,
 				208742BA27552C7800DF3614 /* Category.swift in Sources */,
 				200A4C0F275F77EB00E73330 /* User.swift in Sources */,

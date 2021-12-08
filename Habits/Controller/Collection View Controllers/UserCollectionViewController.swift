@@ -53,11 +53,10 @@ class UserCollectionViewController: UICollectionViewController {
     var model = Model()
 
     func update() {
-        UserRequest().send { result in
+        UserRequest().sendFileRequest { result in
             switch result {
             case .success(let users):
                 self.model.usersByID = users
-                print(users)
             case .failure(let error):
                 print("The request failed for the user request")
                 print(error)
@@ -93,6 +92,7 @@ class UserCollectionViewController: UICollectionViewController {
             
             cell.primaryTextLabel.text = item.user.name
             cell.backgroundColor = .green
+            cell.layer.cornerRadius = 20
             
             return cell
         }
@@ -115,4 +115,14 @@ class UserCollectionViewController: UICollectionViewController {
         return UICollectionViewCompositionalLayout(section: section)
     }
 
+    @IBSegueAction func showUserDetail(_ coder: NSCoder, sender: UICollectionViewCell?) -> UserDetailedViewController? {
+        
+        guard let cell = sender,
+              let indexPath = collectionView.indexPath(for: cell),
+              let item = dataSource.itemIdentifier(for: indexPath) else {
+                  return nil
+              }
+        
+        return UserDetailedViewController(coder: coder, user: item.user)
+    }
 }

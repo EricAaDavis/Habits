@@ -25,7 +25,6 @@ class HabitCollectionViewController: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("view did appear")
         update()
 
 
@@ -74,7 +73,7 @@ class HabitCollectionViewController: UICollectionViewController {
     var model = Model()
     
     func update() {
-        HabitRequest().send { result in
+        HabitRequest().sendFileRequest { result in
             switch result {
             case .success(let habits):
                 self.model.habitsByName = habits
@@ -84,7 +83,6 @@ class HabitCollectionViewController: UICollectionViewController {
                 print(error)
                 self.model.habitsByName = [:]
             }
-            print(self.model.habitsByName)
             DispatchQueue.main.async {
                 self.updateCollectionView()
             }
@@ -172,4 +170,12 @@ class HabitCollectionViewController: UICollectionViewController {
         return config
     }
     
+    @IBSegueAction func showDetailedView(_ coder: NSCoder, sender: UICollectionViewCell?) -> HabitDetailedViewController? {
+        guard let cell = sender,
+              let indexPath = collectionView.indexPath(for: cell),
+              let item = dataSource.itemIdentifier(for: indexPath) else {
+                  return nil
+              }
+        return HabitDetailedViewController(coder: coder, habit: item)
+    }
 }

@@ -15,7 +15,10 @@ struct UserCount {
 
 extension UserCount: Codable { }
 
+//MARK: take a look at this
+//We want the identity of the item to be tied to the user but not the count
 extension UserCount: Hashable { }
+
 
 
 
