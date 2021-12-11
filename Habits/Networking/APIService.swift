@@ -5,7 +5,7 @@
 //  Created by Eric Davis on 29/11/2021.
 //
 
-import Foundation
+import UIKit
 
 struct HabitRequest: APIRequest {
     
@@ -42,8 +42,7 @@ struct HabitStatisticsRequest: APIRequest {
         }
     }
     
-    var filename: String { "HabitMusicStats" }
-
+    var filename: String
 }
 
 struct UserStatisticsRequest: APIRequest {
@@ -63,7 +62,7 @@ struct UserStatisticsRequest: APIRequest {
         }
     }
     
-    var filename: String { "HabitUser2" }
+    var filename: String
     
 }
 
@@ -74,7 +73,16 @@ struct HabitLeadStatisticsRequest: APIRequest {
     
     var path: String { "/userLeadingStats/\(userID)" }
     
-    var filename: String { "userLeadingStatsUser1" }
+    var filename: String 
     
 }
 
+struct ImageRequest: APIRequest {
+    typealias Response = UIImage
+    
+    var imageID: String
+    
+    var path: String { "/images/\(imageID)" }
+    
+    var filename: String
+}

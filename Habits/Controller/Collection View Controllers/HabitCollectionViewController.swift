@@ -74,6 +74,7 @@ class HabitCollectionViewController: UICollectionViewController {
     
     func update() {
         HabitRequest().sendFileRequest { result in
+            print("The closure habitRequest was excecuted")
             switch result {
             case .success(let habits):
                 self.model.habitsByName = habits
@@ -88,6 +89,7 @@ class HabitCollectionViewController: UICollectionViewController {
             }
 //
         }
+        print(model.habitsByName)
     }
     
     //I need to review this so that i fully understand it
@@ -133,6 +135,7 @@ class HabitCollectionViewController: UICollectionViewController {
             case .category(let category):
                 header.nameLabel.text = category.name
             }
+            header.layer.cornerRadius = 10
             return header
         }
         return dataSource

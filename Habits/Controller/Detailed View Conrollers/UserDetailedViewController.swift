@@ -10,6 +10,8 @@ import UIKit
 private let headerIdentifier = "HeaderView"
 private let headerKind = "SectionHeader"
 
+var updateTimer: Timer?
+
 class UserDetailedViewController: UIViewController {
     
     @IBOutlet weak var profileImageView: UIImageView!
@@ -22,6 +24,10 @@ class UserDetailedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let imageViewHeight = profileImageView.frame.height
+        profileImageView.layer.cornerRadius = imageViewHeight / 2
+        imageRequest()
+        
         userNameLabel.text = user.name
         bioLabel.text = user.bio
         
@@ -32,7 +38,25 @@ class UserDetailedViewController: UIViewController {
         collectionView.dataSource = dataSource
         collectionView.collectionViewLayout = createLayout()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         update()
+        
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true, block: { _ in
+            self.update()
+        })
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        updateTimer?.invalidate()
+        updateTimer = nil
+        
     }
     
     required init?(coder: NSCoder) {
@@ -45,6 +69,7 @@ class UserDetailedViewController: UIViewController {
     }
     
     typealias DataSourceType = UICollectionViewDiffableDataSource<ViewModel.Section, ViewModel.Item>
+    
     
     
     enum ViewModel {
@@ -76,27 +101,41 @@ class UserDetailedViewController: UIViewController {
     var dataSource: DataSourceType!
     var model = Model()
     
+    func imageRequest() {
+        ImageRequest(imageID: user.id, filename: user.id).send { result in
+            switch result {
+            case .success(let image):
+                self.profileImageView.image = image
+            default: break
+            }
+        }
+        profileImageView.image = UIImage(named: user.id)
+    }
     
+    var fileCount = 0
     func update() {
-        UserStatisticsRequest().sendFileRequest { result in
+        let userStatisticsFilename = "userStats\(fileCount)"
+        UserStatisticsRequest(userIDs: ["user4"], filename: userStatisticsFilename).sendFileRequest { result in
+            print("The closure userStatistics was excecuted")
+
             switch result {
             case .success(let userStats):
-                print("These are the user stats \(userStats)")
                 self.model.userStats = userStats[0]
             case .failure:
                 print("falure")
                 self.model.userStats = nil
             }
+            
+            DispatchQueue.main.async {
+                self.updateCollectionView()
+            }
         }
         
-        DispatchQueue.main.async {
-            self.updateCollectionView()
-        }
-        
-        HabitLeadStatisticsRequest(userID: user.id).sendFileRequest { result in
+        let habitLeadStatisticsFileName = "habitLeadingStats\(fileCount)"
+        HabitLeadStatisticsRequest(userID: "user4", filename: habitLeadStatisticsFileName).sendFileRequest { result in
+            print("The closure leadStatistics was excecuted")
             switch result {
             case .success(let userStats):
-                print("These are the lead statistics results")
                 self.model.leadingStats = userStats
             case .failure:
                 self.model.leadingStats = nil
@@ -105,6 +144,14 @@ class UserDetailedViewController: UIViewController {
             DispatchQueue.main.async {
                 self.updateCollectionView()
             }
+        }
+        print(userStatisticsFilename)
+        print(habitLeadStatisticsFileName)
+        
+        fileCount += 1
+        
+        if fileCount == 5 {
+            fileCount = 0
         }
     }
     
@@ -126,9 +173,7 @@ class UserDetailedViewController: UIViewController {
             partial[section, default: []].append(habitCount)
         }
         
-        print("Items By Section Before Sorted \(itemsBySection)")
         itemsBySection = itemsBySection.mapValues{ $0.sorted() }
-        print("Items By Section After Sorted \(itemsBySection)")
         
         let sectionIDs = itemsBySection.keys.sorted()
         
@@ -159,7 +204,7 @@ class UserDetailedViewController: UIViewController {
             case .category(let category):
                 header.nameLabel.text = category.name
             }
-            
+            header.layer.cornerRadius = 15
             return header
         }
         
@@ -175,11 +220,11 @@ class UserDetailedViewController: UIViewController {
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 1)
         
         let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(36))
-        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: "header", alignment: .top)
+        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: headerKind, alignment: .top)
         sectionHeader.pinToVisibleBounds = true
         
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 10, bottom: 20, trailing: 10)
         section.boundarySupplementaryItems = [sectionHeader]
         
         return UICollectionViewCompositionalLayout(section: section)

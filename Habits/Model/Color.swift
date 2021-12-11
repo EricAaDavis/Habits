@@ -14,6 +14,7 @@ struct Color: Equatable {
 }
 
 
+
 extension Color: Codable {
     enum CodingKeys: String, CodingKey {
         case hue = "h"

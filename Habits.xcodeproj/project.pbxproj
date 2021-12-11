@@ -11,11 +11,8 @@
 		200A4C13275F813100E73330 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 200A4C12275F813100E73330 /* users.json */; };
 		200A4C17275FA4CA00E73330 /* HabitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A4C16275FA4CA00E73330 /* HabitStatistics.swift */; };
 		200A4C19275FA52B00E73330 /* UserCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A4C18275FA52B00E73330 /* UserCount.swift */; };
-		206878DF2760D6810081849A /* HabitMusicStats.json in Resources */ = {isa = PBXBuildFile; fileRef = 206878DE2760D6810081849A /* HabitMusicStats.json */; };
 		206878E12760EFC80081849A /* UserStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206878E02760EFC80081849A /* UserStatistics.swift */; };
 		206878E32760EFFD0081849A /* HabitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206878E22760EFFD0081849A /* HabitCount.swift */; };
-		206878E5276115740081849A /* HabitStatUser2.json in Resources */ = {isa = PBXBuildFile; fileRef = 206878E4276115740081849A /* HabitStatUser2.json */; };
-		206878E7276115FC0081849A /* userLeadingStatsUser1.json in Sources */ = {isa = PBXBuildFile; fileRef = 206878E6276115FC0081849A /* userLeadingStatsUser1.json */; };
 		2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087426C2754F47100DF3614 /* AppDelegate.swift */; };
 		2087426F2754F47100DF3614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087426E2754F47100DF3614 /* SceneDelegate.swift */; };
 		208742742754F47100DF3614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208742722754F47100DF3614 /* Main.storyboard */; };
@@ -37,6 +34,24 @@
 		20D20494275E293400AA2226 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D20493275E293400AA2226 /* Settings.swift */; };
 		20D20496275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */; };
 		20D20498275E4D7A00AA2226 /* NamedSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D20497275E4D7A00AA2226 /* NamedSectionHeaderView.swift */; };
+		20EF7BA527639BC600D6996C /* habitLeadingStats1.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BA427639BC600D6996C /* habitLeadingStats1.json */; };
+		20EF7BA727639BFD00D6996C /* habitLeadingStats2.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BA627639BFD00D6996C /* habitLeadingStats2.json */; };
+		20EF7BA927639C0F00D6996C /* habitLeadingStats3.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BA827639C0F00D6996C /* habitLeadingStats3.json */; };
+		20EF7BAF27639C3C00D6996C /* habitLeadingStats4.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BAE27639C3C00D6996C /* habitLeadingStats4.json */; };
+		20EF7BB127639C5400D6996C /* habitLeadingStats0.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BB027639C5400D6996C /* habitLeadingStats0.json */; };
+		20EF7BB327639E6800D6996C /* userStats0.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BB227639E6800D6996C /* userStats0.json */; };
+		20EF7BB527639E7400D6996C /* userStats1.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BB427639E7400D6996C /* userStats1.json */; };
+		20EF7BB727639E7E00D6996C /* userStats2.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BB627639E7E00D6996C /* userStats2.json */; };
+		20EF7BB927639E8C00D6996C /* userStats3.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BB827639E8C00D6996C /* userStats3.json */; };
+		20EF7BBB27639E9B00D6996C /* userStats4.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BBA27639E9B00D6996C /* userStats4.json */; };
+		20EF7BBD2763A02900D6996C /* userStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EF7BBC2763A02900D6996C /* userStats.swift */; };
+		20EF7BBF2763A05B00D6996C /* userLeadingStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EF7BBE2763A05B00D6996C /* userLeadingStats.swift */; };
+		20EF7BC22763A0CD00D6996C /* habitsMusicStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EF7BC12763A0CD00D6996C /* habitsMusicStats.swift */; };
+		20EF7BC42763A0FA00D6996C /* habitMusicStats0.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BC32763A0FA00D6996C /* habitMusicStats0.json */; };
+		20EF7BC62763A10500D6996C /* habitMusicStats1.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BC52763A10500D6996C /* habitMusicStats1.json */; };
+		20EF7BC82763A10E00D6996C /* habitMusicStats2.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BC72763A10E00D6996C /* habitMusicStats2.json */; };
+		20EF7BCA2763A11A00D6996C /* habitMusicStats3.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BC92763A11A00D6996C /* habitMusicStats3.json */; };
+		20EF7BCC2763A12300D6996C /* habitMusicStats4.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BCB2763A12300D6996C /* habitMusicStats4.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +76,8 @@
 		200A4C12275F813100E73330 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		200A4C16275FA4CA00E73330 /* HabitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatistics.swift; sourceTree = "<group>"; };
 		200A4C18275FA52B00E73330 /* UserCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCount.swift; sourceTree = "<group>"; };
-		206878DE2760D6810081849A /* HabitMusicStats.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HabitMusicStats.json; sourceTree = "<group>"; };
 		206878E02760EFC80081849A /* UserStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatistics.swift; sourceTree = "<group>"; };
 		206878E22760EFFD0081849A /* HabitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCount.swift; sourceTree = "<group>"; };
-		206878E4276115740081849A /* HabitStatUser2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HabitStatUser2.json; sourceTree = "<group>"; };
-		206878E6276115FC0081849A /* userLeadingStatsUser1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userLeadingStatsUser1.json; sourceTree = "<group>"; };
 		208742692754F47100DF3614 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2087426C2754F47100DF3614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2087426E2754F47100DF3614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +103,24 @@
 		20D20493275E293400AA2226 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDiffableDataSource+ViewModel.swift"; sourceTree = "<group>"; };
 		20D20497275E4D7A00AA2226 /* NamedSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedSectionHeaderView.swift; sourceTree = "<group>"; };
+		20EF7BA427639BC600D6996C /* habitLeadingStats1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitLeadingStats1.json; sourceTree = "<group>"; };
+		20EF7BA627639BFD00D6996C /* habitLeadingStats2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitLeadingStats2.json; sourceTree = "<group>"; };
+		20EF7BA827639C0F00D6996C /* habitLeadingStats3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitLeadingStats3.json; sourceTree = "<group>"; };
+		20EF7BAE27639C3C00D6996C /* habitLeadingStats4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitLeadingStats4.json; sourceTree = "<group>"; };
+		20EF7BB027639C5400D6996C /* habitLeadingStats0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitLeadingStats0.json; sourceTree = "<group>"; };
+		20EF7BB227639E6800D6996C /* userStats0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userStats0.json; sourceTree = "<group>"; };
+		20EF7BB427639E7400D6996C /* userStats1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userStats1.json; sourceTree = "<group>"; };
+		20EF7BB627639E7E00D6996C /* userStats2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userStats2.json; sourceTree = "<group>"; };
+		20EF7BB827639E8C00D6996C /* userStats3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userStats3.json; sourceTree = "<group>"; };
+		20EF7BBA27639E9B00D6996C /* userStats4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userStats4.json; sourceTree = "<group>"; };
+		20EF7BBC2763A02900D6996C /* userStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStats.swift; sourceTree = "<group>"; };
+		20EF7BBE2763A05B00D6996C /* userLeadingStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLeadingStats.swift; sourceTree = "<group>"; };
+		20EF7BC12763A0CD00D6996C /* habitsMusicStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habitsMusicStats.swift; sourceTree = "<group>"; };
+		20EF7BC32763A0FA00D6996C /* habitMusicStats0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats0.json; sourceTree = "<group>"; };
+		20EF7BC52763A10500D6996C /* habitMusicStats1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats1.json; sourceTree = "<group>"; };
+		20EF7BC72763A10E00D6996C /* habitMusicStats2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats2.json; sourceTree = "<group>"; };
+		20EF7BC92763A11A00D6996C /* habitMusicStats3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats3.json; sourceTree = "<group>"; };
+		20EF7BCB2763A12300D6996C /* habitMusicStats4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats4.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,9 +244,8 @@
 			children = (
 				20D2048F275A3DD100AA2226 /* habits.json */,
 				200A4C12275F813100E73330 /* users.json */,
-				206878DE2760D6810081849A /* HabitMusicStats.json */,
-				206878E4276115740081849A /* HabitStatUser2.json */,
-				206878E6276115FC0081849A /* userLeadingStatsUser1.json */,
+				20EF7BC02763A09100D6996C /* Habits Music Simulation Files */,
+				20EF7BA127639B0E00D6996C /* User Stats Simulation Files */,
 				208742B12755121800DF3614 /* APIRequest.swift */,
 				208742B327551D8F00DF3614 /* APIService.swift */,
 			);
@@ -236,6 +265,54 @@
 			children = (
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		20EF7BA127639B0E00D6996C /* User Stats Simulation Files */ = {
+			isa = PBXGroup;
+			children = (
+				20EF7BA327639B5600D6996C /* User 4 Leading Stats update Files */,
+				20EF7BA227639B2A00D6996C /* User 4 Stats Update Files */,
+			);
+			path = "User Stats Simulation Files";
+			sourceTree = "<group>";
+		};
+		20EF7BA227639B2A00D6996C /* User 4 Stats Update Files */ = {
+			isa = PBXGroup;
+			children = (
+				20EF7BBC2763A02900D6996C /* userStats.swift */,
+				20EF7BB227639E6800D6996C /* userStats0.json */,
+				20EF7BB427639E7400D6996C /* userStats1.json */,
+				20EF7BB627639E7E00D6996C /* userStats2.json */,
+				20EF7BB827639E8C00D6996C /* userStats3.json */,
+				20EF7BBA27639E9B00D6996C /* userStats4.json */,
+			);
+			path = "User 4 Stats Update Files";
+			sourceTree = "<group>";
+		};
+		20EF7BA327639B5600D6996C /* User 4 Leading Stats update Files */ = {
+			isa = PBXGroup;
+			children = (
+				20EF7BBE2763A05B00D6996C /* userLeadingStats.swift */,
+				20EF7BB027639C5400D6996C /* habitLeadingStats0.json */,
+				20EF7BA427639BC600D6996C /* habitLeadingStats1.json */,
+				20EF7BA627639BFD00D6996C /* habitLeadingStats2.json */,
+				20EF7BA827639C0F00D6996C /* habitLeadingStats3.json */,
+				20EF7BAE27639C3C00D6996C /* habitLeadingStats4.json */,
+			);
+			path = "User 4 Leading Stats update Files";
+			sourceTree = "<group>";
+		};
+		20EF7BC02763A09100D6996C /* Habits Music Simulation Files */ = {
+			isa = PBXGroup;
+			children = (
+				20EF7BC12763A0CD00D6996C /* habitsMusicStats.swift */,
+				20EF7BC32763A0FA00D6996C /* habitMusicStats0.json */,
+				20EF7BC52763A10500D6996C /* habitMusicStats1.json */,
+				20EF7BC72763A10E00D6996C /* habitMusicStats2.json */,
+				20EF7BC92763A11A00D6996C /* habitMusicStats3.json */,
+				20EF7BCB2763A12300D6996C /* habitMusicStats4.json */,
+			);
+			path = "Habits Music Simulation Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,13 +419,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20EF7BC62763A10500D6996C /* habitMusicStats1.json in Resources */,
 				200A4C13275F813100E73330 /* users.json in Resources */,
+				20EF7BB327639E6800D6996C /* userStats0.json in Resources */,
 				208742792754F47500DF3614 /* LaunchScreen.storyboard in Resources */,
+				20EF7BA727639BFD00D6996C /* habitLeadingStats2.json in Resources */,
 				208742762754F47500DF3614 /* Assets.xcassets in Resources */,
+				20EF7BCC2763A12300D6996C /* habitMusicStats4.json in Resources */,
+				20EF7BAF27639C3C00D6996C /* habitLeadingStats4.json in Resources */,
+				20EF7BC82763A10E00D6996C /* habitMusicStats2.json in Resources */,
+				20EF7BCA2763A11A00D6996C /* habitMusicStats3.json in Resources */,
+				20EF7BB727639E7E00D6996C /* userStats2.json in Resources */,
 				20D20490275A3DD200AA2226 /* habits.json in Resources */,
-				206878DF2760D6810081849A /* HabitMusicStats.json in Resources */,
-				206878E5276115740081849A /* HabitStatUser2.json in Resources */,
+				20EF7BC42763A0FA00D6996C /* habitMusicStats0.json in Resources */,
+				20EF7BA527639BC600D6996C /* habitLeadingStats1.json in Resources */,
 				208742742754F47100DF3614 /* Main.storyboard in Resources */,
+				20EF7BB927639E8C00D6996C /* userStats3.json in Resources */,
+				20EF7BB527639E7400D6996C /* userStats1.json in Resources */,
+				20EF7BA927639C0F00D6996C /* habitLeadingStats3.json in Resources */,
+				20EF7BB127639C5400D6996C /* habitLeadingStats0.json in Resources */,
+				20EF7BBB27639E9B00D6996C /* userStats4.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,11 +470,13 @@
 				208742A82754FEC500DF3614 /* UserDetailedViewController.swift in Sources */,
 				208742B72755236300DF3614 /* PrimarySecondaryTextCollectionViewCell.swift in Sources */,
 				208742A62754FEB500DF3614 /* HabitDetailedViewController.swift in Sources */,
+				20EF7BBD2763A02900D6996C /* userStats.swift in Sources */,
+				20EF7BC22763A0CD00D6996C /* habitsMusicStats.swift in Sources */,
 				208742B427551D8F00DF3614 /* APIService.swift in Sources */,
 				208742A02754FD8200DF3614 /* HabitCollectionViewController.swift in Sources */,
 				2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */,
+				20EF7BBF2763A05B00D6996C /* userLeadingStats.swift in Sources */,
 				200A4C19275FA52B00E73330 /* UserCount.swift in Sources */,
-				206878E7276115FC0081849A /* userLeadingStatsUser1.json in Sources */,
 				208742AF27550FE700DF3614 /* Habit.swift in Sources */,
 				20D20494275E293400AA2226 /* Settings.swift in Sources */,
 				206878E12760EFC80081849A /* UserStatistics.swift in Sources */,

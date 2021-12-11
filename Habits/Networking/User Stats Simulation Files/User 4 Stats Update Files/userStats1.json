@@ -1,0 +1,107 @@
+
+[
+  {
+    "habitCounts": [
+      {
+        "habit": {
+          "name": "Podcast",
+          "category": {
+            "name": "Culture",
+            "color": {
+              "h": 0.2,
+              "s": 0.4,
+              "b": 0.75
+            }
+          },
+          "info": "Keep up with your favorite topics."
+        },
+        "count": 9
+      },
+      {
+        "habit": {
+          "name": "Stretching",
+          "category": {
+            "name": "Exercise",
+            "color": {
+              "h": 0.25,
+              "s": 1,
+              "b": 0.9
+            }
+          },
+          "info": "Get a bit of extra oxygen into your muscles and keep your tendons flexible."
+        },
+        "count": 12
+      },
+      {
+        "habit": {
+          "name": "Music practice",
+          "category": {
+            "name": "Creativity",
+            "color": {
+              "h": 0.6,
+              "s": 0.3,
+              "b": 0.9
+            }
+          },
+          "info": "Getting good at an instrument is all about practice. Work on perfecting your art so you can share the beauty of music with audiences large or small."
+        },
+        "count": 13
+      },
+      {
+        "habit": {
+          "name": "Article",
+          "category": {
+            "name": "Culture",
+            "color": {
+              "h": 0.2,
+              "s": 0.4,
+              "b": 0.75
+            }
+          },
+          "info": "Get out of your social network and take time to read a long-form piece that helps you focus and keeps you informed."
+        },
+        "count": 9
+      },
+      {
+        "habit": {
+          "name": "Live music",
+          "category": {
+            "name": "Culture",
+            "color": {
+              "h": 0.2,
+              "s": 0.4,
+              "b": 0.75
+            }
+          },
+          "info": "Go enjoy your favorite artists, or discover new ones!"
+        },
+        "count": 3
+      },
+      {
+        "habit": {
+          "name": "Drawing",
+          "category": {
+            "name": "Creativity",
+            "color": {
+              "h": 0.6,
+              "s": 0.3,
+              "b": 0.9
+            }
+          },
+          "info": "Sketch, scribble, design, doodle—all great activities to flex your creative muscles and shift mental gears."
+        },
+        "count": 3
+      }
+    ],
+    "user": {
+      "bio": "Avid architecture fan. I believe because I'm optimistic. Idealist; Teacher; Thinker.",
+      "id": "user4",
+      "name": "Cynthia Yao",
+      "color": {
+        "h": 0.635088710330404,
+        "s": 0.63006330002936,
+        "b": 0.8514076802537144
+      }
+    }
+  }
+]

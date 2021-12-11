@@ -91,7 +91,7 @@ class UserCollectionViewController: UICollectionViewController {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "User", for: indexPath) as! PrimarySecondaryTextCollectionViewCell
             
             cell.primaryTextLabel.text = item.user.name
-            cell.backgroundColor = .green
+            cell.backgroundColor = UIColor(hue: 0.7, saturation: 0.5, brightness: 0.4, alpha: 0.4)
             cell.layer.cornerRadius = 20
             
             return cell

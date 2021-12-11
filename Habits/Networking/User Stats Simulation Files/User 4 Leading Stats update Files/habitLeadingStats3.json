@@ -1,3 +1,4 @@
+
 {
   "habitCounts": [
     {
@@ -13,17 +14,17 @@
         },
         "info": "Get a bit of extra oxygen into your muscles and keep your tendons flexible."
       },
-      "count": 787
+      "count": 55
     }
   ],
   "user": {
-    "bio": "Fascinated by soccer since I was in diapers. Self-motivated. My guiding principles: I care and I'm thoughtful.",
-    "id": "user1",
-    "name": "Amber Spiers",
+    "bio": "Avid architecture fan. I believe because I'm optimistic. Idealist; Teacher; Thinker.",
+    "id": "user4",
+    "name": "Cynthia Yao",
     "color": {
-      "h": 0.3821495304243457,
-      "s": 0.9848551441827402,
-      "b": 0.9756186459120062
+      "h": 0.635088710330404,
+      "s": 0.63006330002936,
+      "b": 0.8514076802537144
     }
   }
 }

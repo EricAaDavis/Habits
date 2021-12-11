@@ -1,0 +1,252 @@
+[
+  {
+    "habit": {
+      "name": "Music practice",
+      "category": {
+        "name": "Creativity",
+        "color": {
+          "h": 0.6,
+          "s": 0.3,
+          "b": 0.9
+        }
+      },
+      "info": "Getting good at an instrument is all about practice. Work on perfecting your art so you can share the beauty of music with audiences large or small."
+    },
+    "userCounts": [
+        {
+          "count": 992,
+          "user": {
+            "bio": "I'm optimistic because I'm thoughtful. Thinker; Nurse. Making the world a better place is what gets me out of bed every day.",
+            "id": "user36",
+            "name": "NB! Same stat for every habit",
+            "color": {
+              "h": 0.999,
+              "s": 0.999,
+              "b": 0.999
+            }
+          }
+        },
+      {
+        "count": 52,
+        "user": {
+          "bio": "Fascinated by soccer since I was in diapers. Self-motivated. My guiding principles: I care and I'm thoughtful.",
+          "id": "user1",
+          "name": "Amber Spiers",
+          "color": {
+            "h": 0.3821495304243457,
+            "s": 0.9848551441827402,
+            "b": 0.9756186459120062
+          }
+        }
+      },
+      {
+        "count": 12,
+        "user": {
+          "bio": "My passion is painting. I'm optimistic, which means I'm thoughtful.",
+          "id": "user10",
+          "name": "Greg Apodaca",
+          "color": {
+            "h": 0.9835992678881241,
+            "s": 0.5079869965291897,
+            "b": 0.9145596548227968
+          }
+        }
+      },
+      {
+        "count": 11,
+        "user": {
+          "bio": "Parent; Teacher; Engineer. Driven by finding joy in small moments.",
+          "id": "user13",
+          "name": "Ivy Truong",
+          "color": {
+            "h": 0.06800372067178406,
+            "s": 0.6972852150890815,
+            "b": 0.8836218485364841
+          }
+        }
+      },
+      {
+        "count": 15,
+        "user": {
+          "bio": "Gamer; Tinkerer. I believe, which means I care. Driven by making the world a better place.",
+          "id": "user7",
+          "name": "Eliza Block",
+          "color": {
+            "h": 0.6721522297550194,
+            "s": 0.5557963190816211,
+            "b": 0.9639805916775149
+          }
+        }
+      },
+      {
+        "count": 27,
+        "user": {
+          "bio": "Doer; Self-motivated. My passion is astronomy.",
+          "id": "user31",
+          "name": "Ruben Zakharov",
+          "color": {
+            "h": 0.4407890124149139,
+            "s": 0.6075864662917968,
+            "b": 0.8597624490121549
+          }
+        }
+      },
+      {
+        "count": 5,
+        "user": {
+          "bio": "My guiding principle: I care. Adventurer; Nurse. My passion is soccer.",
+          "id": "user34",
+          "name": "Shota Aoyagi",
+          "color": {
+            "h": 0.784533141019008,
+            "s": 0.8813331247172106,
+            "b": 0.9671870819903015
+          }
+        }
+      },
+      {
+        "count": 5,
+        "user": {
+          "bio": "My guiding principle: I believe. Architecture enthusiast.",
+          "id": "user26",
+          "name": "Nick Jones",
+          "color": {
+            "h": 0.777999509694331,
+            "s": 0.7570451667620008,
+            "b": 0.9924724248023011
+          }
+        }
+      },
+      {
+        "count": 7,
+        "user": {
+          "bio": "Moved and motivated by our beautiful planet. Fascinated by cinema since I was in diapers. I seek answers, which means I'm optimistic. Nurse; Doer.",
+          "id": "user32",
+          "name": "Ryan Carbonetti",
+          "color": {
+            "h": 0.9109481229810218,
+            "s": 0.6652426138349983,
+            "b": 0.8654256327788973
+          }
+        }
+      },
+      {
+        "count": 11,
+        "user": {
+          "bio": "Driven by using each day to the fullest. Team-oriented. My passion is architecture.",
+          "id": "user16",
+          "name": "John Baily",
+          "color": {
+            "h": 0.2906248168609443,
+            "s": 0.5488700172669281,
+            "b": 0.870885874648085
+          }
+        }
+      },
+      {
+        "count": 15,
+        "user": {
+          "bio": "I believe because I'm thoughtful. Making the world a better place is what gets me out of bed every day. Tinkerer; Team-oriented. My passion is puzzles.",
+          "id": "user8",
+          "name": "Enrique de la Huelga",
+          "color": {
+            "h": 0.6731602071503052,
+            "s": 0.5134852828306976,
+            "b": 0.8831281036844925
+          }
+        }
+      },
+      {
+        "count": 11,
+        "user": {
+          "bio": "Finding joy in small moments is what gets me out of bed every day. My passion is soccer. Teacher; Adventurer; Doer.",
+          "id": "user11",
+          "name": "Greg Crane",
+          "color": {
+            "h": 0.111204701457706,
+            "s": 0.6442094961731719,
+            "b": 0.9158358675650332
+          }
+        }
+      },
+      {
+        "count": 6,
+        "user": {
+          "bio": "My passion is soccer. I seek answers because I believe. Moved and motivated by finding joy in small moments.",
+          "id": "user9",
+          "name": "Francine Hanson",
+          "color": {
+            "h": 0.9509357042002439,
+            "s": 0.5569421422422637,
+            "b": 0.9029772597196158
+          }
+        }
+      },
+      {
+        "count": 6,
+        "user": {
+          "bio": "Avid architecture fan. I believe because I'm optimistic. Idealist; Teacher; Thinker.",
+          "id": "user4",
+          "name": "Cynthia Yao",
+          "color": {
+            "h": 0.635088710330404,
+            "s": 0.63006330002936,
+            "b": 0.8514076802537144
+          }
+        }
+      },
+      {
+        "count": 5,
+        "user": {
+          "bio": "Teacher. My guiding principle: I believe. Our beautiful planet is what gets me out of bed every day.",
+          "id": "user3",
+          "name": "Brian Mork",
+          "color": {
+            "h": 0.4379259563711673,
+            "s": 0.7920471615447874,
+            "b": 0.8565676825258216
+          }
+        }
+      },
+      {
+        "count": 3,
+        "user": {
+          "bio": "Driven by my community. My guiding principle: I'm optimistic. I love architecture. Engineer; Idealist; Self-motivated.",
+          "id": "user27",
+          "name": "Nisha Kumar",
+          "color": {
+            "h": 0.708986350451797,
+            "s": 0.8302971217487656,
+            "b": 0.8494634682114195
+          }
+        }
+      },
+      {
+        "count": 3,
+        "user": {
+          "bio": "Moved and motivated by my family. I seek answers, which means I'm optimistic. Architecture enthusiast. Engineer; Nurse; Adventurer.",
+          "id": "user28",
+          "name": "Paul Cashman",
+          "color": {
+            "h": 0.8610469770975463,
+            "s": 0.9695595662493549,
+            "b": 0.9572223032740278
+          }
+        }
+      },
+      {
+        "count": 2,
+        "user": {
+          "bio": "Avid cinema fan. Self-motivated; Engineer; Parent. Moved and motivated by my family.",
+          "id": "user2",
+          "name": "Ashley Kamin",
+          "color": {
+            "h": 0.5122013313775879,
+            "s": 0.9952244945511891,
+            "b": 0.9220149985001073
+          }
+        }
+      }
+    ]
+  }
+]

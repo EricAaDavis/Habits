@@ -1,0 +1,29 @@
+{
+  "habitCounts": [
+    {
+      "habit": {
+        "name": "Stretching",
+        "category": {
+          "name": "Exercise",
+          "color": {
+            "h": 0.25,
+            "s": 1,
+            "b": 0.9
+          }
+        },
+        "info": "Get a bit of extra oxygen into your muscles and keep your tendons flexible."
+      },
+      "count": 12
+    }
+  ],
+  "user": {
+    "bio": "Avid architecture fan. I believe because I'm optimistic. Idealist; Teacher; Thinker.",
+    "id": "user4",
+    "name": "Cynthia Yao",
+    "color": {
+      "h": 0.635088710330404,
+      "s": 0.63006330002936,
+      "b": 0.8514076802537144
+    }
+  }
+}

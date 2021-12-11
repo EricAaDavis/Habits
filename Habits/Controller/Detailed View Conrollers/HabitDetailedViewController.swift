@@ -37,7 +37,8 @@ class HabitDetailedViewController: UIViewController {
         super.viewDidAppear(animated)
         update()
         
-        updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+        
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 4, repeats: true) { _ in
             self.update()
         }
     }
@@ -96,9 +97,10 @@ class HabitDetailedViewController: UIViewController {
     var model = Model()
     
     //MARK: Needs some review
+    var fileCount = 0
     func update() {
-        //This i need some help with understanding what is going on here.
-        HabitStatisticsRequest(habitNames: ["Music practice"]).sendFileRequest { result in
+        let filename = "habitMusicStats\(fileCount)"
+        HabitStatisticsRequest(habitNames: ["Music practice"], filename: filename ).sendFileRequest { result in
             // if we have data and there are more than 0 statistics, ad the first one to the model.habitStatistics.
             if case .success(let statistics) = result, statistics.count > 0 {
                 self.model.habitStatistics = statistics[0]
@@ -120,6 +122,12 @@ class HabitDetailedViewController: UIViewController {
             DispatchQueue.main.async {
                 self.updateCollectionView()
             }
+        }
+        
+        fileCount += 1
+
+        if fileCount == 5 {
+            fileCount = 0
         }
     }
     
