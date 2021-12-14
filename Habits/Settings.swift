@@ -65,6 +65,18 @@ struct Settings {
     
     let currentUser = User(id: "activeUser", name: "Eric Davis", color: nil, bio: nil)
     
+    mutating func toggleFollowed(user: User) {
+        var updated = followedUserIDs
+        
+        if updated.contains(user.id) {
+            updated = updated.filter { $0 != user.id }
+        } else {
+            updated.append(user.id)
+        }
+        
+        followedUserIDs = updated
+    }
+    
 }
 
 

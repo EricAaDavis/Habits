@@ -105,4 +105,10 @@ struct LogHabitRequest: APIRequest {
 }
 
 
-struct CombinedStatistics
+struct CombinedStatisticsRequest: APIRequest {
+    typealias Response = CombinedStatistics
+    
+    var path: String { "/combinedStats" }
+    
+    var filename: String { "combinedStats" }
+}
