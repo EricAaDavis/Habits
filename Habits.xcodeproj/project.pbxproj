@@ -30,6 +30,8 @@
 		208742B72755236300DF3614 /* PrimarySecondaryTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208742B62755236300DF3614 /* PrimarySecondaryTextCollectionViewCell.swift */; };
 		208742BA27552C7800DF3614 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208742B927552C7800DF3614 /* Category.swift */; };
 		208742BC2756391100DF3614 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208742BB2756391100DF3614 /* Color.swift */; };
+		20C4E4A527676B75009F8378 /* LoggedHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4E4A427676B75009F8378 /* LoggedHabit.swift */; };
+		20C4E4A727677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4E4A627677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift */; };
 		20D20490275A3DD200AA2226 /* habits.json in Resources */ = {isa = PBXBuildFile; fileRef = 20D2048F275A3DD100AA2226 /* habits.json */; };
 		20D20494275E293400AA2226 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D20493275E293400AA2226 /* Settings.swift */; };
 		20D20496275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */; };
@@ -52,6 +54,7 @@
 		20EF7BC82763A10E00D6996C /* habitMusicStats2.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BC72763A10E00D6996C /* habitMusicStats2.json */; };
 		20EF7BCA2763A11A00D6996C /* habitMusicStats3.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BC92763A11A00D6996C /* habitMusicStats3.json */; };
 		20EF7BCC2763A12300D6996C /* habitMusicStats4.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EF7BCB2763A12300D6996C /* habitMusicStats4.json */; };
+		20F966B02768ACE000F6B88D /* CombinedStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F966AF2768ACE000F6B88D /* CombinedStatistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,8 @@
 		208742B62755236300DF3614 /* PrimarySecondaryTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySecondaryTextCollectionViewCell.swift; sourceTree = "<group>"; };
 		208742B927552C7800DF3614 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		208742BB2756391100DF3614 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		20C4E4A427676B75009F8378 /* LoggedHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedHabit.swift; sourceTree = "<group>"; };
+		20C4E4A627677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardhabitCollectionViewCell.swift; sourceTree = "<group>"; };
 		20D2048F275A3DD100AA2226 /* habits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = habits.json; sourceTree = "<group>"; };
 		20D20493275E293400AA2226 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDiffableDataSource+ViewModel.swift"; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 		20EF7BC72763A10E00D6996C /* habitMusicStats2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats2.json; sourceTree = "<group>"; };
 		20EF7BC92763A11A00D6996C /* habitMusicStats3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats3.json; sourceTree = "<group>"; };
 		20EF7BCB2763A12300D6996C /* habitMusicStats4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = habitMusicStats4.json; sourceTree = "<group>"; };
+		20F966AF2768ACE000F6B88D /* CombinedStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedStatistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,12 +202,12 @@
 		208742A92754FEC900DF3614 /* Collection View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */,
 				20D20497275E4D7A00AA2226 /* NamedSectionHeaderView.swift */,
-				2087429C2754FD6A00DF3614 /* HomeCollectionViewController.swift */,
+				20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */,
 				2087429F2754FD8200DF3614 /* HabitCollectionViewController.swift */,
 				208742A12754FD8D00DF3614 /* UserCollectionViewController.swift */,
 				208742A32754FDA000DF3614 /* LogHabitCollectionViewController.swift */,
+				2087429C2754FD6A00DF3614 /* HomeCollectionViewController.swift */,
 			);
 			path = "Collection View Controllers";
 			sourceTree = "<group>";
@@ -226,6 +232,8 @@
 				200A4C18275FA52B00E73330 /* UserCount.swift */,
 				206878E02760EFC80081849A /* UserStatistics.swift */,
 				206878E22760EFFD0081849A /* HabitCount.swift */,
+				20C4E4A427676B75009F8378 /* LoggedHabit.swift */,
+				20F966AF2768ACE000F6B88D /* CombinedStatistics.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				208742B62755236300DF3614 /* PrimarySecondaryTextCollectionViewCell.swift */,
+				20C4E4A627677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift */,
 			);
 			path = "Cell View Controllers";
 			sourceTree = "<group>";
@@ -477,6 +486,7 @@
 				2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */,
 				20EF7BBF2763A05B00D6996C /* userLeadingStats.swift in Sources */,
 				200A4C19275FA52B00E73330 /* UserCount.swift in Sources */,
+				20C4E4A527676B75009F8378 /* LoggedHabit.swift in Sources */,
 				208742AF27550FE700DF3614 /* Habit.swift in Sources */,
 				20D20494275E293400AA2226 /* Settings.swift in Sources */,
 				206878E12760EFC80081849A /* UserStatistics.swift in Sources */,
@@ -485,7 +495,9 @@
 				208742BA27552C7800DF3614 /* Category.swift in Sources */,
 				200A4C0F275F77EB00E73330 /* User.swift in Sources */,
 				208742A42754FDA000DF3614 /* LogHabitCollectionViewController.swift in Sources */,
+				20F966B02768ACE000F6B88D /* CombinedStatistics.swift in Sources */,
 				200A4C17275FA4CA00E73330 /* HabitStatistics.swift in Sources */,
+				20C4E4A727677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift in Sources */,
 				208742B22755121800DF3614 /* APIRequest.swift in Sources */,
 				2087426F2754F47100DF3614 /* SceneDelegate.swift in Sources */,
 			);

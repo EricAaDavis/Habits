@@ -45,8 +45,10 @@ struct Settings {
         var favorites = favoriteHabits
         
         if favorites.contains(habit) {
+            //If favorite already contains habit, remove it.
             favorites = favorites.filter{ $0 != habit }
         } else {
+            //Otherwise add it to the favorites array
             favorites.append(habit)
         }
         
@@ -60,6 +62,8 @@ struct Settings {
             archiveJSON(value: newValue, key: Setting.followedUserIDs)
         }
     }
+    
+    let currentUser = User(id: "activeUser", name: "Eric Davis", color: nil, bio: nil)
     
 }
 

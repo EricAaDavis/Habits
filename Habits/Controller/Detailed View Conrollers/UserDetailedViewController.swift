@@ -77,7 +77,7 @@ class UserDetailedViewController: UIViewController {
             case leading
             case category(_ category: Category)
             
-            //What is this comparing, and why?
+            //What is going on here?
             static func < (lhs: Section, rhs: Section) -> Bool {
                 switch (lhs, rhs) {
                 case (.leading, .category), (.leading, .leading):
@@ -116,8 +116,6 @@ class UserDetailedViewController: UIViewController {
     func update() {
         let userStatisticsFilename = "userStats\(fileCount)"
         UserStatisticsRequest(userIDs: ["user4"], filename: userStatisticsFilename).sendFileRequest { result in
-            print("The closure userStatistics was excecuted")
-
             switch result {
             case .success(let userStats):
                 self.model.userStats = userStats[0]
@@ -159,7 +157,7 @@ class UserDetailedViewController: UIViewController {
         guard let userStatistics = model.userStats,
               let leadingStatistics = model.leadingStats else { return }
         
-        //MARK: I Need to understand the reduce function
+        //MARK: I Need to understand the reduce method
         // reduce into view model
         var itemsBySection = userStatistics.habitCounts.reduce(into: [ViewModel.Section: [ViewModel.Item]]()) { partial, habitCount in
             let section: ViewModel.Section

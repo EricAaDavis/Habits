@@ -44,6 +44,7 @@ class HabitCollectionViewController: UICollectionViewController {
             case favorites
             case category(_ category: Category)
             
+            //How is this sorting working
             static func < (lhs: Section, rhs: Section) -> Bool {
                 switch (lhs, rhs){
                 case (.category(let l), .category(let r)):
@@ -120,6 +121,8 @@ class HabitCollectionViewController: UICollectionViewController {
         let dataSource = DataSourceType(collectionView: collectionView) { collectionView, indexPath, item in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Habit", for: indexPath) as! PrimarySecondaryTextCollectionViewCell
             cell.primaryTextLabel.text = item.name
+            
+            cell.backgroundColor = UIColor(hue: 0.6, saturation: 0.6, brightness: 0.6, alpha: 1)
             return cell
             
             
@@ -135,7 +138,7 @@ class HabitCollectionViewController: UICollectionViewController {
             case .category(let category):
                 header.nameLabel.text = category.name
             }
-            header.layer.cornerRadius = 10
+//            header.layer.cornerRadius = 10
             return header
         }
         return dataSource
@@ -160,6 +163,7 @@ class HabitCollectionViewController: UICollectionViewController {
         return UICollectionViewCompositionalLayout(section: section)
     }
     
+    //This is a delegate method
     override func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
         let config = UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { _ in
             let item = self.dataSource.itemIdentifier(for: indexPath)!

@@ -96,12 +96,12 @@ class HabitDetailedViewController: UIViewController {
     var dataSource: DataSourceType!
     var model = Model()
     
-    //MARK: Needs some review
     var fileCount = 0
     func update() {
         let filename = "habitMusicStats\(fileCount)"
         HabitStatisticsRequest(habitNames: ["Music practice"], filename: filename ).sendFileRequest { result in
             // if we have data and there are more than 0 statistics, ad the first one to the model.habitStatistics.
+            // if case needs some esplenation
             if case .success(let statistics) = result, statistics.count > 0 {
                 self.model.habitStatistics = statistics[0]
             } else {
@@ -131,13 +131,11 @@ class HabitDetailedViewController: UIViewController {
         }
     }
     
-    //MARK: This needs some explenation
+    //MARK: This needs some explenation, What is going on here
     func updateCollectionView() {
         let items = (self.model.habitStatistics?.userCounts.map
                      { ViewModel.Item.single($0) } ?? []).sorted(by: >)
-        
-//        print("These are the Items \(items)")
-        
+                
         dataSource.applySnapshotUsing(sectionIDs: [ViewModel.Section.remaining], itemsBySection: [ViewModel.Section.remaining: items])
     }
     

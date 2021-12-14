@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9d-F0-ePK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="-449"/>
+            <point key="canvasLocation" x="-862" y="-449"/>
         </scene>
         <!--Log Habit-->
         <scene sceneID="bjq-8X-ySP">
@@ -41,13 +41,28 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ku0-K7-LbO">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Habit" id="Ku0-K7-LbO" customClass="PrimarySecondaryTextCollectionViewCell" customModule="Habits" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Kl-pv-fCu">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3r-e8-tca">
+                                            <rect key="frame" x="43" y="53.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="m3r-e8-tca" firstAttribute="centerY" secondItem="1Kl-pv-fCu" secondAttribute="centerY" id="VcN-bD-eQ7"/>
+                                        <constraint firstItem="m3r-e8-tca" firstAttribute="centerX" secondItem="1Kl-pv-fCu" secondAttribute="centerX" id="gPP-Ex-ple"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="primaryTextLabel" destination="m3r-e8-tca" id="XeZ-zF-0QM"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -59,7 +74,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrj-22-QGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="294"/>
+            <point key="canvasLocation" x="-862" y="294"/>
         </scene>
         <!--Home-->
         <scene sceneID="hem-Sy-jhc">
@@ -76,7 +91,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Gm-lD-WAW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2580" y="-437"/>
+            <point key="canvasLocation" x="-139" y="-449"/>
         </scene>
         <!--Home-->
         <scene sceneID="r3h-iv-JfT">
@@ -93,13 +108,82 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bsV-Pe-RwP">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LeaderboardHabit" id="bsV-Pe-RwP" customClass="LeaderboardhabitCollectionViewCell" customModule="Habits" customModuleProvider="target">
+                                <rect key="frame" x="53.5" y="0.0" width="307" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uCD-uO-h6Y">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEG-FN-BL8">
+                                            <rect key="frame" x="8" y="8" width="100" height="23"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-UH-zdy">
+                                            <rect key="frame" x="238.5" y="105.5" width="60.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I44-yO-GVl">
+                                            <rect key="frame" x="260" y="83" width="39" height="14.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gMd-UH-zdy" firstAttribute="top" secondItem="I44-yO-GVl" secondAttribute="bottom" constant="8" id="5QN-wq-A4t"/>
+                                        <constraint firstAttribute="trailing" secondItem="I44-yO-GVl" secondAttribute="trailing" constant="8" id="8qv-b9-RJG"/>
+                                        <constraint firstAttribute="trailing" secondItem="gMd-UH-zdy" secondAttribute="trailing" constant="8" id="Cn9-51-0ZG"/>
+                                        <constraint firstAttribute="bottom" secondItem="gMd-UH-zdy" secondAttribute="bottom" constant="8" id="OFZ-vH-lNq"/>
+                                        <constraint firstItem="pEG-FN-BL8" firstAttribute="leading" secondItem="uCD-uO-h6Y" secondAttribute="leading" constant="8" id="RRS-kP-7x9"/>
+                                        <constraint firstItem="pEG-FN-BL8" firstAttribute="top" secondItem="uCD-uO-h6Y" secondAttribute="top" constant="8" id="h3c-GW-kkf"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="307" height="128"/>
+                                <connections>
+                                    <outlet property="habitNameLabel" destination="pEG-FN-BL8" id="ak9-dF-JOr"/>
+                                    <outlet property="leaderBoardLabel" destination="I44-yO-GVl" id="QKC-Rd-vUn"/>
+                                    <outlet property="secondaryLabel" destination="gMd-UH-zdy" id="hRs-yg-VDv"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FIx-9T-9zY" customClass="PrimarySecondaryTextCollectionViewCell" customModule="Habits" customModuleProvider="target">
+                                <rect key="frame" x="0.5" y="138" width="413" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="D9i-dv-Kzs">
+                                    <rect key="frame" x="0.0" y="0.0" width="413" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmm-1B-96y">
+                                            <rect key="frame" x="32" y="41" width="373" height="79"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0a-77-rFJ">
+                                            <rect key="frame" x="8" y="8" width="74.5" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="nmm-1B-96y" secondAttribute="trailing" constant="8" id="6qX-go-0jX"/>
+                                        <constraint firstItem="Q0a-77-rFJ" firstAttribute="top" secondItem="D9i-dv-Kzs" secondAttribute="top" constant="8" id="RhX-k4-BID"/>
+                                        <constraint firstItem="Q0a-77-rFJ" firstAttribute="leading" secondItem="D9i-dv-Kzs" secondAttribute="leading" constant="8" id="W8c-RQ-wLR"/>
+                                        <constraint firstItem="nmm-1B-96y" firstAttribute="leading" secondItem="D9i-dv-Kzs" secondAttribute="leading" constant="32" id="Xsq-nJ-Gap"/>
+                                        <constraint firstItem="nmm-1B-96y" firstAttribute="top" secondItem="Q0a-77-rFJ" secondAttribute="bottom" constant="16" id="iyd-CH-3dU"/>
+                                        <constraint firstAttribute="bottom" secondItem="nmm-1B-96y" secondAttribute="bottom" constant="8" id="lJZ-r0-XcU"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="413" height="128"/>
+                                <connections>
+                                    <outlet property="primaryTextLabel" destination="Q0a-77-rFJ" id="jFP-0l-drK"/>
+                                    <outlet property="secondaryTextLabel" destination="nmm-1B-96y" id="lxE-9P-36w"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -111,7 +195,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOi-Mm-xKK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2581" y="294"/>
+            <point key="canvasLocation" x="-139.13043478260872" y="293.97321428571428"/>
         </scene>
         <!--People-->
         <scene sceneID="wrI-nD-jWd">
@@ -128,7 +212,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tc-KX-VGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855" y="-437"/>
+            <point key="canvasLocation" x="-1610" y="-449"/>
         </scene>
         <!--People-->
         <scene sceneID="pPP-Of-ZUB">
@@ -179,7 +263,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUw-FC-892" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855" y="294"/>
+            <point key="canvasLocation" x="-1610" y="294"/>
         </scene>
         <!--Habits-->
         <scene sceneID="2dc-GB-fAk">
@@ -196,7 +280,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ko9-n2-34s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1723" y="-437"/>
+            <point key="canvasLocation" x="-2349" y="-449"/>
         </scene>
         <!--Habits-->
         <scene sceneID="5fC-BS-hDL">
@@ -248,7 +332,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1T-Ob-AqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1723.1884057971015" y="293.97321428571428"/>
+            <point key="canvasLocation" x="-2349" y="294"/>
         </scene>
         <!--Habit Detailed View Controller-->
         <scene sceneID="Bft-RU-jFO">
@@ -354,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2Z-3R-EEm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1723.1884057971015" y="1041.9642857142858"/>
+            <point key="canvasLocation" x="-2349" y="993"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zaB-WB-mJF">
@@ -485,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ov9-Zf-8eL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855.07246376811599" y="1041.9642857142858"/>
+            <point key="canvasLocation" x="-1610" y="992"/>
         </scene>
     </scenes>
     <resources>
