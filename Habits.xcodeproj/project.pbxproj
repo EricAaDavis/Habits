@@ -32,6 +32,8 @@
 		208742BC2756391100DF3614 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208742BB2756391100DF3614 /* Color.swift */; };
 		20C4E4A527676B75009F8378 /* LoggedHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4E4A427676B75009F8378 /* LoggedHabit.swift */; };
 		20C4E4A727677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4E4A627677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift */; };
+		20C72004276A0B9F0064ACAA /* supplementaryItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C72003276A0B9F0064ACAA /* supplementaryItemType.swift */; };
+		20C72006276A3A600064ACAA /* FollowedUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C72005276A3A600064ACAA /* FollowedUserCollectionViewCell.swift */; };
 		20D20490275A3DD200AA2226 /* habits.json in Resources */ = {isa = PBXBuildFile; fileRef = 20D2048F275A3DD100AA2226 /* habits.json */; };
 		20D20494275E293400AA2226 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D20493275E293400AA2226 /* Settings.swift */; };
 		20D20496275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */; };
@@ -105,6 +107,8 @@
 		208742BB2756391100DF3614 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		20C4E4A427676B75009F8378 /* LoggedHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedHabit.swift; sourceTree = "<group>"; };
 		20C4E4A627677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardhabitCollectionViewCell.swift; sourceTree = "<group>"; };
+		20C72003276A0B9F0064ACAA /* supplementaryItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supplementaryItemType.swift; sourceTree = "<group>"; };
+		20C72005276A3A600064ACAA /* FollowedUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		20D2048F275A3DD100AA2226 /* habits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = habits.json; sourceTree = "<group>"; };
 		20D20493275E293400AA2226 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		20D20495275E331300AA2226 /* UICollectionViewDiffableDataSource+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDiffableDataSource+ViewModel.swift"; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 				208742A12754FD8D00DF3614 /* UserCollectionViewController.swift */,
 				208742A32754FDA000DF3614 /* LogHabitCollectionViewController.swift */,
 				2087429C2754FD6A00DF3614 /* HomeCollectionViewController.swift */,
+				20C72003276A0B9F0064ACAA /* supplementaryItemType.swift */,
 			);
 			path = "Collection View Controllers";
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			children = (
 				208742B62755236300DF3614 /* PrimarySecondaryTextCollectionViewCell.swift */,
 				20C4E4A627677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift */,
+				20C72005276A3A600064ACAA /* FollowedUserCollectionViewCell.swift */,
 			);
 			path = "Cell View Controllers";
 			sourceTree = "<group>";
@@ -485,6 +491,7 @@
 				208742A62754FEB500DF3614 /* HabitDetailedViewController.swift in Sources */,
 				20EF7BBD2763A02900D6996C /* userStats.swift in Sources */,
 				20EF7BC22763A0CD00D6996C /* habitsMusicStats.swift in Sources */,
+				20C72006276A3A600064ACAA /* FollowedUserCollectionViewCell.swift in Sources */,
 				208742B427551D8F00DF3614 /* APIService.swift in Sources */,
 				208742A02754FD8200DF3614 /* HabitCollectionViewController.swift in Sources */,
 				2087426D2754F47100DF3614 /* AppDelegate.swift in Sources */,
@@ -504,6 +511,7 @@
 				20C4E4A727677C8A009F8378 /* LeaderboardhabitCollectionViewCell.swift in Sources */,
 				208742B22755121800DF3614 /* APIRequest.swift in Sources */,
 				2087426F2754F47100DF3614 /* SceneDelegate.swift in Sources */,
+				20C72004276A0B9F0064ACAA /* supplementaryItemType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

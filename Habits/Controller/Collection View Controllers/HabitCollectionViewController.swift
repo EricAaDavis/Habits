@@ -11,6 +11,8 @@ private let reuseIdentifier = "Cell"
 private let sectionHeaderKind = "SectionHeader"
 private let sectionHeaderIdentifier = "HeaderView"
 
+let favoriteHabitColor = UIColor(hue: 0.15, saturation: 1, brightness: 0.9, alpha: 1)
+
 class HabitCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
@@ -26,9 +28,6 @@ class HabitCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         update()
-
-
-//        print("This is how the view model looks now  \(model)")
     }
     
     //MARK: I need better understanding of MVVM (Model-View-View Model)
@@ -39,6 +38,15 @@ class HabitCollectionViewController: UICollectionViewController {
     enum ViewModel {
         //This needs some explenation
         enum Section: Hashable, Comparable {
+            
+            var sectionColor: UIColor {
+                switch self {
+                case .favorites:
+                    return favoriteHabitColor
+                case .category(let category):
+                    return category.color.uiColor
+                }
+            }
             
             //favorites will be displayed at the top
             case favorites
@@ -94,7 +102,6 @@ class HabitCollectionViewController: UICollectionViewController {
     }
     
     //I need to review this so that i fully understand it
-    //
     func updateCollectionView() {
         //first build a dictionary that maps each section to its associated array of items
         var itemsBySection = model.habitsByName.values.reduce(into: [ViewModel.Section: [ViewModel.Item]]()) { partial, habit in
@@ -117,12 +124,14 @@ class HabitCollectionViewController: UICollectionViewController {
     }
     
     //deque and set up PrimarySecondaryTextCollectionViewCells according to the contents of the view model item from the snapshot
+    func configureCell(_ cell: PrimarySecondaryTextCollectionViewCell, withItem item: HabitCollectionViewController.ViewModel.Item) {
+        cell.primaryTextLabel.text = item.name
+    }
+    
     func createDataSource() -> DataSourceType {
         let dataSource = DataSourceType(collectionView: collectionView) { collectionView, indexPath, item in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Habit", for: indexPath) as! PrimarySecondaryTextCollectionViewCell
-            cell.primaryTextLabel.text = item.name
-            
-            cell.backgroundColor = UIColor(hue: 0.6, saturation: 0.6, brightness: 0.6, alpha: 1)
+            self.configureCell(cell, withItem: item)
             return cell
             
             
@@ -139,6 +148,7 @@ class HabitCollectionViewController: UICollectionViewController {
                 header.nameLabel.text = category.name
             }
 //            header.layer.cornerRadius = 10
+            header.backgroundColor = section.sectionColor
             return header
         }
         return dataSource

@@ -54,8 +54,6 @@ extension APIRequest {
         
     }
 }
-
-//this Where Response: Decodable i don't quite understand. How does the function know what response is?
 //limiting the the use of the method inside to only those types whose associeted Response typed are Decodable
 extension APIRequest where Response: Decodable {
     

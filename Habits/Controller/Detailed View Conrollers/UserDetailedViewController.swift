@@ -24,19 +24,23 @@ class UserDetailedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = user.color?.uiColor ?? .white
+        
         let imageViewHeight = profileImageView.frame.height
         profileImageView.layer.cornerRadius = imageViewHeight / 2
-        imageRequest()
+//        imageRequest()
         
         userNameLabel.text = user.name
         bioLabel.text = user.bio
         
-        //Why is .self required?
+        //Why is .self required? Why can't i just do NamedSectionHeaderView.
         collectionView.register(NamedSectionHeaderView.self, forSupplementaryViewOfKind: headerKind, withReuseIdentifier: headerIdentifier)
         
         dataSource = createDataSource()
         collectionView.dataSource = dataSource
         collectionView.collectionViewLayout = createLayout()
+        
+        
         
     }
     
@@ -45,7 +49,7 @@ class UserDetailedViewController: UIViewController {
         
         update()
         
-        updateTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true, block: { _ in
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
             self.update()
         })
         
@@ -77,6 +81,15 @@ class UserDetailedViewController: UIViewController {
             case leading
             case category(_ category: Category)
             
+            var sectionColor: UIColor {
+                switch self {
+                case .leading:
+                    return .systemGray4
+                case .category(let category):
+                    return category.color.uiColor
+                }
+            }
+            
             //What is going on here?
             static func < (lhs: Section, rhs: Section) -> Bool {
                 switch (lhs, rhs) {
@@ -101,16 +114,16 @@ class UserDetailedViewController: UIViewController {
     var dataSource: DataSourceType!
     var model = Model()
     
-    func imageRequest() {
-        ImageRequest(imageID: user.id, filename: user.id).send { result in
-            switch result {
-            case .success(let image):
-                self.profileImageView.image = image
-            default: break
-            }
-        }
-        profileImageView.image = UIImage(named: user.id)
-    }
+//    func imageRequest() {
+//        ImageRequest(imageID: user.id, filename: user.id).send { result in
+//            switch result {
+//            case .success(let image):
+//                self.profileImageView.image = image
+//            default: break
+//            }
+//        }
+//        profileImageView.image = UIImage(named: user.id)
+//    }
     
     var fileCount = 0
     func update() {
@@ -203,6 +216,7 @@ class UserDetailedViewController: UIViewController {
                 header.nameLabel.text = category.name
             }
             header.layer.cornerRadius = 15
+            header.backgroundColor = section.sectionColor
             return header
         }
         

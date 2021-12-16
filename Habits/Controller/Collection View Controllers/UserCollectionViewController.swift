@@ -48,6 +48,7 @@ class UserCollectionViewController: UICollectionViewController {
             }.values)
         }
     }
+    
     //why isn't it = instead of :?
     var dataSource: DataSourceType!
     var model = Model()
@@ -81,7 +82,7 @@ class UserCollectionViewController: UICollectionViewController {
             print("The data source is nil")
             return
         }
-        //This failed because i didn't create the dataSource, that is why it was nil.
+        //This failed because i didn't create the dataSource. That is why it was nil.
         dataSource.applySnapshotUsing(sectionIDs: [0], itemsBySection: itemsBySection )
 
     }
@@ -91,8 +92,8 @@ class UserCollectionViewController: UICollectionViewController {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "User", for: indexPath) as! PrimarySecondaryTextCollectionViewCell
             
             cell.primaryTextLabel.text = item.user.name
-            cell.backgroundColor = UIColor(hue: 0.7, saturation: 0.5, brightness: 0.4, alpha: 0.4)
-            cell.layer.cornerRadius = 20
+            cell.contentView.backgroundColor = item.user.color?.uiColor ?? .systemGray4
+            cell.layer.cornerRadius = 8
             
             return cell
         }
@@ -131,7 +132,7 @@ class UserCollectionViewController: UICollectionViewController {
         let config = UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { (elements) -> UIMenu? in
             guard let item = self.dataSource.itemIdentifier(for: indexPath) else { return nil }
             
-            //Where is the .isFollowed Bool updated?
+            //Where is the .isFollowed Bool updated/toggled?
             let favoriteToggle = UIAction(title: item.isFollowed ? "Unfollow" : "Follow" ) { (action) in
                 Settings.shared.toggleFollowed(user: item.user)
                 self.updateCollectionView()

@@ -21,7 +21,6 @@ class HabitDetailedViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         nameLabel.text = habit.name
         categoryLabel.text = habit.category.name
         infoLabel.text = habit.info
@@ -38,7 +37,7 @@ class HabitDetailedViewController: UIViewController {
         update()
         
         
-        updateTimer = Timer.scheduledTimer(withTimeInterval: 4, repeats: true) { _ in
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             self.update()
         }
     }
